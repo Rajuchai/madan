@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hello">
+        <h1 class="CAL">CALCULATOR</h1>
+            <input type="text" value="😊😊😊😊😊" name="display" class="specific" >
+            <div class="row1" id="column">
+                <input type="button" value="7" id="btn" onclick="document.querySelector('.specific').value += '7'">
+                <input type="button" value="8" id="btn" onclick="document.querySelector('.specific').value += '8'">
+                <input type="button" value="9" id="btn" onclick="document.querySelector('.specific').value += '9'">
+                <input type="button" value="+" id="btn" onclick="document.querySelector('.specific').value += '+'">
+            </div>
+            <div class="row2" id="column">
+                <input type="button" value="4" id="btn" onclick="document.querySelector('.specific').value += '4'">
+                <input type="button" value="5" id="btn" onclick="document.querySelector('.specific').value += '5'">
+                <input type="button" value="6" id="btn" onclick="document.querySelector('.specific').value += '6'">
+                <input type="button" value="-" id="btn" onclick="document.querySelector('.specific').value += '-'">
+            </div>
+            <div class="row3" id="column">
+                <input type="button" value="1" id="btn" onclick="document.querySelector('.specific').value += '1'">
+                <input type="button" value="2" id="btn" onclick="document.querySelector('.specific').value += '2'">
+                <input type="button" value="3" id="btn" onclick="document.querySelector('.specific').value += '3'">
+                <input type="button" value="×" id="btn" onclick="document.querySelector('.specific').value += '*'">
+            </div>
+            <div class="row4" id="column">
+                <input type="button" value="0" id="btn" onclick="document.querySelector('.specific').value += '0'">
+                <input type="button" value="." id="btn" onclick="document.querySelector('.specific').value += '.'">
+                <input type="button" value="00" id="btn" onclick="document.querySelector('.specific').value += '00'">
+                <input type="button" value="÷" id="btn" onclick="document.querySelector('.specific').value += '/'">
+            </div>
+            <div class="row5" id="column">
+                <input type="button" value="AC" id="btn" class ="All" style="width: 136px; border-radius: 30%;"  onclick="document.querySelector('.specific').value = ' '">
+                <input type="button" value="Del" id="btn" style="font-size: 30px; font-weight: lighter;" onclick="document.querySelector('.specific').value = document.querySelector('.specific').value.slice(0, -1)";>
+                <input type="button" value="=" id="btn" onclick="document.querySelector('.specific').value = eval(hello = document.querySelector('.specific').value)">
+            </div>
+        </main>
+    </div>
+</body>
+</html>
